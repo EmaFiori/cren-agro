@@ -1,11 +1,11 @@
 import React from 'react'
-
+import logo from "../../assets/crenagro.png"
 const Logo = () => {
   return (
     <div>
         <img
         className='w-20' 
-        src="src/assets/crenagro.png" alt="" />
+        src={logo} alt="" />
     </div>
   )
 }
