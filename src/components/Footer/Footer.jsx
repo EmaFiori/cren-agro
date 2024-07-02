@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from '../Logo/Logo'
 
 const Footer = () => {
   return (
@@ -9,7 +10,7 @@ const Footer = () => {
             <div className="w-full -mx-6 lg:w-2/5">
                 <div className="px-6">
                     <a href="#">
-                        <img className="w-auto h-7" src="#" alt="Logo"/>
+                       <Logo/>
                     </a>
 
                     <p className="max-w-sm mt-2 text-gray-500 dark:text-gray-400">Join 31,000+ other and never miss out on new tips, tutorials, and more.</p>
@@ -25,7 +26,8 @@ const Footer = () => {
                             </svg>
                         </a>
                     
-                        <a href="#"
+                        <a href="https://www.facebook.com/profile.php?id=100057571744697"
+                        target='_blank'
                             className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
                             aria-label="Facebook">
                             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

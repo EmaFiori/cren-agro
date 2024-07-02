@@ -1,18 +1,22 @@
 import React, { useState, useEffect } from 'react';
-
+import Logo from '../Logo/Logo';
+import Logo2 from '../Logo2/Logo2';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [navbarColor, setNavbarColor] = useState('bg-white dark:bg-gray-800');
   const [linkColor, setLinkColor] = useState ('text-black');
-
+  const [logo, setLogo] = useState (<Logo/>)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        setNavbarColor('bg-orange-400');
+        setNavbarColor('bg-verde');
         setLinkColor('text-white');
+        setLogo(<Logo2/>);
+
       } else {
         setNavbarColor('bg-white ');
         setLinkColor('text-black');
+        setLogo(<Logo/>);
       }
     };
 
@@ -28,7 +32,7 @@ const Navbar = () => {
         <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
           <div className="flex items-center justify-between">
             <a href="#" className={`font-extrabold ${linkColor} text-lg`}>
-              CrenAgro
+             {logo}
             </a>
             <div className="flex lg:hidden">
               <button
@@ -56,13 +60,13 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col md:flex-row md:mx-6">
-              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#inicio">
+              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#inicio">
                 Inicio
               </a>
-              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#marcas">
+              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#marcas">
                 Marcas
               </a>
-              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
+              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
                 Nosotros
               </a>
             </div>

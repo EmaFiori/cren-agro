@@ -58,35 +58,35 @@ export const Marcas = () => {
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRsPNhjGLJ5IS5iE-0DktbSx9brlgQg5X1Tw&s" 
                 alt="Reform" 
                 className="w-14 rounded-xl  object-contain"
-                width="158"
+                width="200"
                 height="48"
               />
             </div>
-            <div className="max-h-12 w-full flex items-center justify-center">
+            <div className="max-h-12 w-full mt-.5 flex items-center justify-center ">
               <img 
-                src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" 
+                src="https://static2.aastatic.com.ar/files/variants/150/b4725f99985b45679b410521a4fd40bc.jpg" 
                 alt="Tuple" 
-                className="object-contain"
-                width="158"
-                height="48"
+                className="object-contain rounded-lg"
+                width="50"
+                height="50"
               />
             </div>
-            <div className="max-h-12 w-full flex items-center justify-center">
+            <div className="max-h-12 mt-[-1rem] w-full flex items-center justify-center">
               <img 
-                src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" 
+                src="https://iconape.com/wp-content/files/uj/197604/png/197604.png" 
                 alt="SavvyCal" 
                 className="object-contain"
-                width="158"
-                height="48"
+                width="80"
+                height="80"
               />
             </div>
-            <div className="max-h-12 w-full flex items-center justify-center">
+            <div className="max-h-12 w-full mt-[-1.5rem] flex items-center justify-center">
               <img 
-                src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" 
+                src="https://www.exportadoresdecordoba.com/images_db/logos/220px/24233_logo.jpg" 
                 alt="Statamic" 
                 className="object-contain"
-                width="158"
-                height="48"
+                width="100"
+                height="100"
               />
             </div>
           </Slider>
