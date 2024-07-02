@@ -1,16 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [navbarColor, setNavbarColor] = useState('bg-white dark:bg-gray-800');
+  const [linkColor, setLinkColor] = useState ('text-black');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setNavbarColor('bg-orange-400');
+        setLinkColor('text-white');
+      } else {
+        setNavbarColor('bg-white ');
+        setLinkColor('text-black');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <div>
-      <nav className="relative bg-white shadow dark:bg-gray-800 rounded-lg ">
+    <div className='mb-20'>
+      <nav className={`fixed top-0.5  mr-10 w-full z-10 shadow ${navbarColor}  rounded-lg px-10 transition-colors duration-300`}>
         <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
           <div className="flex items-center justify-between">
-            <a href="#" className='font-extrabold text-lg'>
-                CrenAgro
-              {/* <img className="w-auto h-6 sm:h-7" src="#" alt="Logo" /> */}
+            <a href="#" className={`font-extrabold ${linkColor} text-lg`}>
+              CrenAgro
             </a>
             <div className="flex lg:hidden">
               <button
@@ -33,26 +51,21 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
-              isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full'
+            className={`absolute inset-x-0 z-20 w-96 px-6 py-4 transition-all duration-300 ease-in-out bg-white md-${navbarColor} dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
+              isOpen ? 'translate-y-0 opacity-100 ' : 'opacity-0 -translate-x-full'
             }`}
           >
             <div className="flex flex-col md:flex-row md:mx-6">
-              <a className="my-2 text-gray-700 font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
-                Home
+              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#inicio">
+                Inicio
               </a>
-              <a className="my-2 text-gray-700 font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
-                Shop
+              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#marcas">
+                Marcas
               </a>
-              <a className="my-2 text-gray-700 font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
-                Contact
-              </a>
-              <a className="my-2 text-gray-700 font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
-                About
+              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
+                Nosotros
               </a>
             </div>
-
-           
           </div>
         </div>
       </nav>
