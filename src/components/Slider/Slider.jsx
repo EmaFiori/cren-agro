@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Slider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = [
-    "/docs/images/carousel/carousel-1.svg",
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0ji0qtwNZDy4cqg9OSv4bMynjYwOY3MPzOw&s",
     "/docs/images/carousel/carousel-2.svg",
     "/docs/images/carousel/carousel-3.svg",
     "/docs/images/carousel/carousel-4.svg",
@@ -33,7 +33,7 @@ const Slider = () => {
           >
             <img
               src={slide}
-              className="block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="block w-full -translate-x-1/5 -translate-y-1/5 top-1/5 rounded-lg"
               alt={`Slide ${index + 1}`}
             />
           </div>

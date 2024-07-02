@@ -5,13 +5,15 @@ import StickySection from './components/StickySection/StickySection'
 import Slider from './components/Slider/Slider'
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
+import Hero from './components/Hero/Hero'
 function App() {
   
 
   return (
     <>
     <Navbar/>
-     <Slider/> 
+    <Hero/>
+     {/* <Slider/>  */}
     <StickySection/>
     <Footer/>
     </>

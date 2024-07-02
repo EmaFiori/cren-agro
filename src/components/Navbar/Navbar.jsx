@@ -8,8 +8,9 @@ const Navbar = () => {
       <nav className="relative bg-white shadow dark:bg-gray-800 rounded-lg ">
         <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
           <div className="flex items-center justify-between">
-            <a href="#">
-              <img className="w-auto h-6 sm:h-7" src="#" alt="Logo" />
+            <a href="#" className='font-extrabold text-lg'>
+                CrenAgro
+              {/* <img className="w-auto h-6 sm:h-7" src="#" alt="Logo" /> */}
             </a>
             <div className="flex lg:hidden">
               <button
@@ -37,16 +38,16 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col md:flex-row md:mx-6">
-              <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+              <a className="my-2 text-gray-700 font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
                 Home
               </a>
-              <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+              <a className="my-2 text-gray-700 font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
                 Shop
               </a>
-              <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+              <a className="my-2 text-gray-700 font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
                 Contact
               </a>
-              <a className="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
+              <a className="my-2 text-gray-700 font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">
                 About
               </a>
             </div>
