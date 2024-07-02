@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import StickySection from './components/StickySection/StickySection'
 import Slider from './components/Slider/Slider'
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/Footer/Footer'
 function App() {
   
 
@@ -12,6 +13,7 @@ function App() {
     <Navbar/>
      <Slider/> 
     <StickySection/>
+    <Footer/>
     </>
   )
 }
