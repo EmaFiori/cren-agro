@@ -34,7 +34,7 @@ const Navbar = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
+                className={`${linkColor} dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400`}
                 aria-label="toggle menu"
               >
                 {!isOpen ? (
@@ -51,7 +51,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`absolute inset-x-0 z-20 w-96 px-6 py-4 transition-all duration-300 ease-in-out bg-white md-${navbarColor} dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
+            className={`absolute inset-x-0 z-20 w-96 px-6 py-4 transition-all duration-300 ease-in-out  ${navbarColor} md- dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
               isOpen ? 'translate-y-0 opacity-100 ' : 'opacity-0 -translate-x-full'
             }`}
           >
