@@ -69,6 +69,9 @@ const Navbar = () => {
               <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
                 Nosotros
               </a>
+              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
+                Maquinarias
+              </a>
             </div>
           </div>
         </div>
