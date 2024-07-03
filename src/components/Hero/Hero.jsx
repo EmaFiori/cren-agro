@@ -7,7 +7,7 @@ const Hero = () => {
       <Video />
       <div className='mx-4 my-20 md:my-20 flex flex-col items-center justify-center rounded-3xl bg-cover bg-center text-white h-full relative gap-9'>
         <div className='relative  my-10'>
-          <h1 className='animate-fade-up  text-center mx-64 text-5xl font-extrabold text-white md:text-xl lg:text-4xl'>
+          <h1 className='animate-fade-up  text-center lg:mx-64 text-2xl font-extrabold text-white md:text-xl lg:text-4xl'>
          Repuestos y Herramientas  Agrícolas de  Calidad para Mantener <br /> Tu Negocio en Movimiento. 
             </h1>
         

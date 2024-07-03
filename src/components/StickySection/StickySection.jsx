@@ -33,8 +33,8 @@ export default function StickySection() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <p className="text-base font-semibold leading-7 text-rojo">Deploy faster</p>
-                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A better workflow</h1>
+                <p className="text-base font-semibold leading-7 text-rojo">Conocenos.</p>
+                <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">¿Quienes Somos?</h1>
                 <p className="mt-6 text-xl leading-8 text-gray-700">
                   Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
                   eget aliquam. Quisque id at vitae feugiat egestas.
@@ -42,11 +42,11 @@ export default function StickySection() {
               </div>
             </div>
           </div>
-          <div className="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden">
+          <div className="mr-24 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:mx-[-10rem]">
             <img
-              className="animate-fade-left animate-duration-1000 animate-delay-200 w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-              src="https://maquinac.com/wp-content/uploads/2022/03/Tractor-Zanello-4100.jpg"
-              alt=""
+              className="animate-fade-left animate-duration-1000 animate-delay-200 w-[28rem] lg:w-[40rem] max-w-none mx-[-3.5rem] lg:mx-auto rounded-xl lg:rounded-2xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+              src="src/assets/sobre-nosotros.png"
+              alt="sobre-nosotros-img"
             />
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
