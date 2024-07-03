@@ -29,7 +29,7 @@ const Navbar = () => {
   return (
     <div className='mb-20'>
       <nav className={`fixed top-0  mr-10 w-full z-10 shadow ${navbarColor}   px-10 transition-colors duration-300`}>
-        <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+        <div className="container px-6 py-2 mx-auto md:flex md:justify-between md:items-center">
           <div className="flex items-center justify-between">
             <a href="#" className={`font-extrabold ${linkColor} text-lg`}>
              {logo}
@@ -55,7 +55,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`absolute inset-x-0 z-20 w-96 px-6 py-4 transition-all duration-300 ease-in-out  ${navbarColor} md- dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
+            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out  ${navbarColor} md- dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
               isOpen ? 'translate-y-0 opacity-100 ' : 'opacity-0 -translate-x-full'
             }`}
           >
