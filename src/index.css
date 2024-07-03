@@ -5,3 +5,24 @@ html {
     scroll-behavior:smooth;
   
   }
+  .parallax-bg {
+    background: url('src/assets/jorge.png') no-repeat center center;
+    background-size: cover;
+    transform: translateY(0);
+    will-change: transform;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+  
+  .parallax-bg::before {
+    content: '';
+    display: block;
+    height: 200%; /* Ajusta esto según la intensidad del efecto parallax */
+  }
+  
+  @media (min-width: 768px) {
+    .parallax-bg {
+      background-attachment: fixed;
+    }
+  }
