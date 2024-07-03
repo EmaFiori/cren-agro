@@ -9,7 +9,8 @@ export default {
   theme: {
     colors:{
     "rojo":"#C9333C",
-    "verde":"#38964D",
+    "verde":"#66BB6A",
+    "gris-claro":"#333333",
 
     },
     extend: {},

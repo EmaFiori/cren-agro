@@ -5,18 +5,22 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [navbarColor, setNavbarColor] = useState('bg-white dark:bg-gray-800');
   const [linkColor, setLinkColor] = useState ('text-black');
+  const [hover , setHover] = useState('hover:text-rojo');
   const [logo, setLogo] = useState (<Logo/>)
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setNavbarColor('bg-verde');
-        setLinkColor('text-white');
+        setLinkColor('text-gris-claro');
         setLogo(<Logo2/>);
+        setHover("hover:text-white");
+
 
       } else {
         setNavbarColor('bg-white ');
-        setLinkColor('text-black');
+        setLinkColor('text-gris-claro');
         setLogo(<Logo/>);
+        setHover('hover:text-rojo');
       }
     };
 
@@ -60,16 +64,16 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col md:flex-row md:mx-6">
-              <a className={`my-2 ${linkColor}  text-lg font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#inicio">
+              <a className={`my-2 ${linkColor}  text-lg montserrat transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#inicio">
                 Inicio
               </a>
-              <a className={`my-2 ${linkColor} text-lg font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#marcas">
+              <a className={`my-2 ${linkColor} text-lg montserrat transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#marcas">
                 Marcas
               </a>
-              <a className={`my-2 ${linkColor} text-lg font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
+              <a className={`my-2 ${linkColor} text-lg montserrat transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
                 ¿Quienes Somos?
               </a>
-              <a className={`my-2 ${linkColor} text-lg font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#">
+              <a className={`my-2 ${linkColor} text-lg montserrat transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#">
                 Repuestos y Herramientas
               </a>
             </div>

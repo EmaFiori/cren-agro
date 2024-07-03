@@ -41,7 +41,7 @@ export const Marcas = () => {
 
         <div className="bg-white py-24 ">
   <div className=" mx-auto max-w-5xl lg:px-6 lg:px-8">
-    <h2 className="text-center text-3xl font-bold leading-8 text-gray-900">Somos los principales distribuidores de las mejores marcas.</h2>
+    <h2 className="text-center text-3xl montserrat leading-8 text-gray-900">Somos los principales distribuidores de las mejores marcas.</h2>
     <div className="mx-auto mt-10">
           <Slider {...settings}>
             <div className="  flex items-center justify-center">

@@ -5,6 +5,13 @@ html {
     scroll-behavior:smooth;
   
   }
+  .montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+  }
+  
   .parallax-bg {
     background: url('src/assets/jorge.png') no-repeat center center;
     background-size: cover;
