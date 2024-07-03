@@ -80,7 +80,7 @@ export const Marcas = () => {
                 height="80"
               />
             </div>
-            <div className="max-h-12 w-full mt-[-1.5rem] flex items-center justify-center">
+            {/* <div className="max-h-12 w-full mt-[-1.5rem] flex items-center justify-center">
               <img 
                 src="https://www.exportadoresdecordoba.com/images_db/logos/220px/24233_logo.jpg" 
                 alt="Statamic" 
@@ -88,7 +88,7 @@ export const Marcas = () => {
                 width="100"
                 height="100"
               />
-            </div>
+            </div> */}
           </Slider>
         </div>
   </div>
