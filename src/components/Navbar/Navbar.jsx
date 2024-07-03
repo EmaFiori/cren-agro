@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className='mb-20'>
-      <nav className={`fixed top-0.5  mr-10 w-full z-10 shadow ${navbarColor}  rounded-lg px-10 transition-colors duration-300`}>
+      <nav className={`fixed top-0  mr-10 w-full z-10 shadow ${navbarColor}   px-10 transition-colors duration-300`}>
         <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
           <div className="flex items-center justify-between">
             <a href="#" className={`font-extrabold ${linkColor} text-lg`}>
@@ -60,17 +60,17 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col md:flex-row md:mx-6">
-              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#inicio">
+              <a className={`my-2 ${linkColor}  text-lg font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#inicio">
                 Inicio
               </a>
-              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#marcas">
+              <a className={`my-2 ${linkColor} text-lg font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0`} href="#marcas">
                 Marcas
               </a>
-              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
-                Nosotros
+              <a className={`my-2 ${linkColor} text-lg font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
+                ¿Quienes Somos?
               </a>
-              <a className={`my-2 ${linkColor} font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#nosotros">
-                Maquinarias
+              <a className={`my-2 ${linkColor} text-lg font-bold transition-colors duration-300 transform dark:text-gray-200 hover:text-rojo dark:hover:text-blue-400 md:mx-4 md:my-0` }href="#">
+                Repuestos y Herramientas
               </a>
             </div>
           </div>

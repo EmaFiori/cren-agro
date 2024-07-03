@@ -12,7 +12,7 @@ function App() {
   
 
   return (
-    <>
+    <div className=''>
     <Navbar/>
     <div id='inicio'>
     <Hero/>
@@ -26,7 +26,7 @@ function App() {
     </div>
     <Numeros/>
     <Footer/>
-    </>
+    </div>
   )
 }
 
