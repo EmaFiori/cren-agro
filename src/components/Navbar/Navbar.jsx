@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className='mb-20'>
-      <nav className={`fixed top-0  mr-10 w-full z-10 shadow ${navbarColor}   px-10 transition-colors duration-300`}>
+      <nav className={`fixed top-0  mr-10 w-full z-10  ${navbarColor}   px-10 transition-colors duration-300`}>
         <div className="container px-6 py-2 mx-auto md:flex md:justify-between md:items-center">
           <div className="flex items-center justify-between">
             <a href="#" className={`font-extrabold ${linkColor} text-lg`}>
