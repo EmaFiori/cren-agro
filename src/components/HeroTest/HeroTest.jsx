@@ -7,7 +7,7 @@ const HeroTest = () => {
     <div className="bg-white">
     <section className="relative py-10 m-8 md:m-32  sm:mt-24 sm:py-1 lg:pb-40">
         <div className="absolute bottom-0 right-0 overflow-hidden">
-            <img className="w-full h-auto origin-bottom-right transform scale-150 lg:w-auto lg:mx-auto lg:object-cover lg:scale-75" src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/background-pattern.png" alt="" />
+            {/* <img className="w-full h-auto origin-bottom-right transform scale-150 lg:w-auto lg:mx-auto lg:object-cover lg:scale-75" src="https://cdn.rareblocks.xyz/collection/clarity/images/hero/1/background-pattern.png" alt="" /> */}
         </div>
 
         <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
