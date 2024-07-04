@@ -10,7 +10,9 @@ export default {
     colors:{
     "rojo":"#C9333C",
     "verde":"#66BB6A",
-    "gris-claro":"#333333",
+    "gris-claro":"#F0F0F0",
+    "gris-medio":"#6D6D6D",
+    "gris-oscuro":"#333333",
 
     },
     extend: {},

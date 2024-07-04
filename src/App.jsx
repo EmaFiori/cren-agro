@@ -7,7 +7,6 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import {Marcas}  from './components/Marcas/Marcas'
-import Numeros from './components/Numeros/Numeros'
 import HeroTest from './components/HeroTest/HeroTest'
 function App() {
   
@@ -26,7 +25,7 @@ function App() {
      <div id='nosotros'>
     <StickySection/>
     </div>
-    <Numeros/>
+    
     <Footer/>
     </div>
   )

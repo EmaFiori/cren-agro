@@ -15,7 +15,7 @@ const Navbar = () => {
     const handleScroll = () => {
       if (window.scrollY > 50) {
         setNavbarColor('bg-verde');
-        setLinkColor('text-gris-claro');
+        setLinkColor('text-gris-oscuro');
         setLogo(<Logo2 />);
         setHover('hover:text-white');
       } else {
@@ -80,25 +80,25 @@ const Navbar = () => {
           >
             <div className="flex flex-col md:flex-row md:mx-6">
               <a
-                className={`my-2 ${linkColor} text-lg montserrat transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
+                className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#inicio"
               >
                 Inicio
               </a>
               <a
-                className={`my-2 ${linkColor} text-lg montserrat transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
+                className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#marcas"
               >
                 Marcas
               </a>
               <a
-                className={`my-2 ${linkColor} text-lg montserrat transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
+                className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#nosotros"
               >
-                ¿Quienes Somos?
+                Sobre Nosotros
               </a>
               <a
-                className={`my-2 ${linkColor} text-lg montserrat transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
+                className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#"
               >
                 Repuestos y Herramientas
