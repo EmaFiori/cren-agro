@@ -5,7 +5,7 @@ import { DirectionAwareHover } from '../../aceternity/ui/direction-aware-hover'
 
 export default function StickySection() {
     return (
-      <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:my-[-10rem] sm:mx-[6rem] sm:ml-[8rem] lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden bg-white px-6 my-64 sm:my-[-10rem] sm:mx-[6rem] sm:ml-[8rem] lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -37,10 +37,18 @@ export default function StickySection() {
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
                 <p className="text-base  leading-7 text-rojo montserrat">Conocenos.</p>
-                <h1 className="mt-2 text-3xl montserrat tracking-tight text-gray-900 sm:text-4xl">¿Quienes Somos?</h1>
-                <p className="mt-6 text-xl leading-8 text-gray-700 montserrat">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh sem. At arcu, sit dui mi, nibh dui, diam
-                  eget aliquam. Quisque id at vitae feugiat egestas.
+                <h1 className="mt-2 text-3xl montserrat tracking-tight text-gris-oscuro sm:text-4xl">¿Quienes Somos?</h1>
+                <p className="mt-6 sm:text-xl leading-8 text-gray-700 montserrat">
+                Hace más de 50 años, CrenAgro fue creada para apoyar a dueños 
+                y trabajadores agrícolas. <br />
+                 {/* Basados en nuestra propia experiencia,
+                  comprendemos los desafíos del sector y
+                   ofrecemos herramientas y 
+                   repuestos que resuelven problemas reales.
+                    */}A lo largo de los años, hemos crecido con éxito, 
+                     manteniendo la lealtad de nuestros clientes antiguos
+                      y ganando la confianza de nuevas generaciones.
+
                 </p>
               </div>
             </div>
@@ -51,13 +59,17 @@ export default function StickySection() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"> 
-                <h2 className="mt-[-6rem] text-2xl font-bold tracking-tight text-gray-900 montserrat">No server? No problem.</h2>
-                <p className="mt-6 montserrat">
-                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
-                  Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
-                  tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
-                  turpis ipsum eu a sed convallis diam.
+                <h2 className="mt-[-2rem] text-3xl sm:text-4xl font-bold tracking-tight text-gris-oscuro montserrat">Porque Elegirnos</h2>
+                <p className="mt-6 sm:text-xl montserrat">
+                Con más de 10 años de experiencia,
+                 nuestro equipo se destaca por su carisma,
+                  respeto y la confianza que establecemos 
+                  con nuestros clientes. El negocio es atendido
+                   por los propios dueños, lo que garantiza un 
+                   vínculo real y cercano con cada cliente. 
+                
                 </p>
+
               </div>
             </div>
           </div>

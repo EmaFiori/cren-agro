@@ -26,7 +26,7 @@ const HeroTest = () => {
                     <TextEffect/> 
                     {/* <p className="mt-2 text-lg text-gris-medio sm:mt-6 montserrat">Repuestos y herramientas agrícolas de calidad para asegurar tu productividad</p> */}
                     <div className='button'>
-                    <a href="#" title="" className="inline-flex px-8 py-4 mt-8 text-lg montserrat text-gris-claro transition-all duration-200 bg-rojo border border-transparent rounded-xl sm:mt-10 font-pj hover:bg-gris-claro hover:border-verde hover:text-verde hover:shadow-2xl hover:transition hover:translate-y-[-.5rem] hover:text-gris-claro focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
+                    <a href="#" title="" className="inline-flex lg:px-10 px-8 lg:py-4 py-3 ml-20 lg:ml-1 mt-8 text-lg montserrat text-gris-claro transition-all duration-200 bg-rojo border border-transparent rounded-xl sm:mt-10 font-pj hover:bg-gris-claro hover:border-verde hover:text-verde hover:shadow-2xl hover:transition hover:translate-y-[-.5rem] hover:text-gris-claro focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
                    
                         Explorar
                        
