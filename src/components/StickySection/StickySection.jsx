@@ -1,5 +1,6 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import SobreNosotros from './SobreNosotros/SobreNosotros'
+import Video from '../Video/Video'
 
 export default function StickySection() {
     return (
@@ -44,7 +45,7 @@ export default function StickySection() {
             </div>
           </div>
           <div className=" -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:ml-[-6rem]">
-         <SobreNosotros/>
+         <Video/>
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">

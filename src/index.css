@@ -27,6 +27,9 @@ html {
     display: block;
     height: 200%; /* Ajusta esto según la intensidad del efecto parallax */
   }
+  .img{
+    
+  }
   
   @media (min-width: 768px) {
     .parallax-bg {
