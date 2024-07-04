@@ -50,8 +50,8 @@ export default function StickySection() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"> 
-                <h2 className="mt-[-6rem] text-2xl font-bold tracking-tight text-gray-900">No server? No problem.</h2>
-                <p className="mt-6">
+                <h2 className="mt-[-6rem] text-2xl font-bold tracking-tight text-gray-900 montserrat">No server? No problem.</h2>
+                <p className="mt-6 montserrat">
                   Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam consequat in. Convallis arcu ipsum urna nibh.
                   Pharetra, euismod vitae interdum mauris enim, consequat vulputate nibh. Maecenas pellentesque id sed
                   tellus mauris, ultrices mauris. Tincidunt enim cursus ridiculus mi. Pellentesque nam sed nullam sed diam
