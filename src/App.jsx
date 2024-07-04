@@ -18,14 +18,13 @@ function App() {
       <HeroTest/>
     {/* <Hero/> */}
     </div>
-    <div id='marcas'>
-    <Marcas/>
-    </div>
      {/* <Slider/>  */}
      <div id='nosotros'>
     <StickySection/>
     </div>
-    
+    <div id='marcas'>
+    <Marcas/>
+    </div>
     <Footer/>
     </div>
   )

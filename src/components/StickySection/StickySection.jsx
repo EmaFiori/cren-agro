@@ -1,10 +1,11 @@
 import { CloudArrowUpIcon, LockClosedIcon, ServerIcon } from '@heroicons/react/20/solid'
 import SobreNosotros from './SobreNosotros/SobreNosotros'
 import Video from '../Video/Video'
+import { DirectionAwareHover } from '../../aceternity/ui/direction-aware-hover'
 
 export default function StickySection() {
     return (
-      <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:overflow-visible lg:px-0">
+      <div className="relative isolate overflow-hidden bg-white px-6 py-24 sm:my-[-10rem] sm:mx-[6rem] sm:ml-[8rem] lg:overflow-visible lg:px-0">
         <div className="absolute inset-0 -z-10 overflow-hidden">
           <svg
             className="absolute left-[max(50%,25rem)] top-0 h-[64rem] w-[128rem] -translate-x-1/2 stroke-gray-200 [mask-image:radial-gradient(64rem_64rem_at_top,white,transparent)]"
@@ -45,7 +46,7 @@ export default function StickySection() {
             </div>
           </div>
           <div className=" -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:ml-[-6rem]">
-        <SobreNosotros/>
+       <SobreNosotros/>
           </div>
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-2 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">

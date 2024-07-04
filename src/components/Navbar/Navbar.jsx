@@ -10,6 +10,7 @@ const Navbar = () => {
   const [hover, setHover] = useState('hover:text-rojo');
   const [logo, setLogo] = useState(<Logo />);
   const [isHovered, setIsHovered] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,11 +19,13 @@ const Navbar = () => {
         setLinkColor('text-gris-oscuro');
         setLogo(<Logo2 />);
         setHover('hover:text-white');
+        setIsScrolled(true);
       } else {
-        setNavbarColor('bg-white');
+        setNavbarColor('bg-transparent');
         setLinkColor('text-gris-claro');
         setLogo(<Logo />);
         setHover('hover:text-rojo');
+        setIsScrolled(false);
       }
     };
 
@@ -33,11 +36,15 @@ const Navbar = () => {
   }, []);
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
+    if (isScrolled) {
+      setIsHovered(true);
+    }
   };
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    if (isScrolled) {
+      setIsHovered(false);
+    }
   };
 
   return (
@@ -74,7 +81,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out ${navbarColor} md- dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
+            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out ${navbarColor}  dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
               isOpen ? 'translate-y-0 opacity-100 ' : 'opacity-0 -translate-x-full'
             }`}
           >
@@ -85,17 +92,18 @@ const Navbar = () => {
               >
                 Inicio
               </a>
-              <a
-                className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
-                href="#marcas"
-              >
-                Marcas
-              </a>
+             
               <a
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#nosotros"
               >
                 Sobre Nosotros
+              </a>
+              <a
+                className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
+                href="#marcas"
+              >
+                Marcas
               </a>
               <a
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
