@@ -8,12 +8,12 @@ import BgVerde from './Bg-Verde/Bg-Verde'
 const HeroTest = () => {
   return (
     <div className="bg-white">
-          <div className="absolute bottom-0 right-0 overflow-hidden">
+          <div className="absolute mb-[1rem] ml-[-20rem] lg:mb-auto lg:mt-[20rem] lg:ml-[-2rem] bottom-0 right-0 overflow-hidden">
            <BgRojo/>
         </div>
     <section className="relative py-10 m-8 md:m-32  sm:mt-24 sm:py-1 lg:pb-40">
   
-        <div className="absolute bottom-0 right-0 overflow-hidden">
+        <div className="absolute ml-[7rem] bottom-0 right-0 overflow-hidden">
         <BgVerde/>
         </div>
 

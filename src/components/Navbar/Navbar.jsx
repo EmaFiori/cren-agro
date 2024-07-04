@@ -21,7 +21,7 @@ const Navbar = () => {
         setHover('hover:text-white');
         setIsScrolled(true);
       } else {
-        setNavbarColor('bg-transparent');
+        setNavbarColor('lg:bg-transparent bg-white');
         setLinkColor('text-gris-claro');
         setLogo(<Logo />);
         setHover('hover:text-rojo');
@@ -64,7 +64,7 @@ const Navbar = () => {
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 type="button"
-                className={`${linkColor} dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400`}
+                className={`${linkColor} dark:text-gray-200 text-gris-oscuro hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400`}
                 aria-label="toggle menu"
               >
                 {!isOpen ? (
