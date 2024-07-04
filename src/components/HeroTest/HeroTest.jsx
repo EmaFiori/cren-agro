@@ -1,4 +1,6 @@
 import React from 'react'
+import Nosotros from './Nosotros/Nosotros'
+import InteriorImg from './InteriorImg/InteriorImg'
 
 const HeroTest = () => {
   return (
@@ -22,9 +24,9 @@ const HeroTest = () => {
                 </div>
 
                 <div className="mt-10 sm:mt-0  xl:col-span-1">
-                    <img className="sm:w-10/12 w-10/12 ml-[4rem] rounded-xl hover:shadow-xl sm:ml-[8rem] sm:mt-[-4rem]" src="src/assets/sobre-nosotros.png" alt="" />
-                    <img className='sm:w-96  w-6/12 mt-[-2rem]  rounded-xl shadow absolute sm:mt-[-5rem] sm:ml-[-4rem]' src="src/assets/interior.jpg" alt="" />
-                </div>
+                    <Nosotros/>
+                    <InteriorImg/>
+                    </div>
             </div>
         </div>
     </section>
