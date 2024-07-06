@@ -107,7 +107,7 @@ const Navbar = () => {
               </a>
               <a
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
-                href="#"
+                href="#repuestosyherramientas"
               >
                 Repuestos y Herramientas
               </a>

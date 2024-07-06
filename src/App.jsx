@@ -8,6 +8,8 @@ import Footer from './components/Footer/Footer'
 import Hero from './components/Hero/Hero'
 import {Marcas}  from './components/Marcas/Marcas'
 import HeroTest from './components/HeroTest/HeroTest'
+import { CardHover } from './components/CardHover/CardHover'
+import RepuestosYHerramientas from './components/RepuestosYHerramientas/RepuestosYHerramientas'
 function App() {
   
 
@@ -24,6 +26,9 @@ function App() {
     </div>
     <div id='marcas'>
     <Marcas/>
+    </div>
+    <div id='repuestosyherramientas'>
+      <RepuestosYHerramientas/>
     </div>
     <Footer/>
     </div>
