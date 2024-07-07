@@ -1,5 +1,6 @@
 import React from 'react'
-import { CardHover } from '../CardHover/CardHover'
+import { CardHover } from './CardHover/CardHover'
+import StaticCards from './StaticCards/StaticCards'
 
 const RepuestosYHerramientas = () => {
   return (
@@ -8,6 +9,9 @@ const RepuestosYHerramientas = () => {
             <h1 className='montserrat text-center lg:text-4xl text-2xl'>Repuestos y Herramientas</h1>
             <div className='lg:flex lg:mx-16 hidden'>
             <CardHover/>
+            </div>
+            <div className='lg:hidden'>
+            <StaticCards/>
             </div>
         </div>
     </div>

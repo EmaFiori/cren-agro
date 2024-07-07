@@ -49,15 +49,15 @@ const Footer = () => {
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex text-base text-gris-oscuro montserrat transition-all duration-200 hover:text-rojo "> Sobre Nosotros </a>
+                        <a href="#sobrenosotros" title="" className="flex text-base text-gris-oscuro montserrat transition-all duration-200 hover:text-rojo "> Sobre Nosotros </a>
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex text-base text-gris-oscuro montserrat transition-all duration-200 hover:text-rojo "> Marcas </a>
+                        <a href="#marcas" title="" className="flex text-base text-gris-oscuro montserrat transition-all duration-200 hover:text-rojo "> Marcas </a>
                     </li>
 
                     <li>
-                        <a href="#" title="" className="flex text-base text-gris-oscuro  montserrat transition-all duration-200 hover:text-rojo "> Repuestos y Herramigris </a>
+                        <a href="#repuestosyherramientas" title="" className="flex text-base text-gris-oscuro  montserrat transition-all duration-200 hover:text-rojo "> Repuestos y Herramigris </a>
                     </li>
                 </ul>
             </div>

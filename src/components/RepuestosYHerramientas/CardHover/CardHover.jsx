@@ -1,9 +1,8 @@
 
-"use client";
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { cn } from "../../utils/cn";
-import { DirectionAwareHover } from "../../aceternity/ui/direction-aware-hover";
+import { cn } from "../../../utils/cn";
+import { DirectionAwareHover } from "../../../aceternity/ui/direction-aware-hover";
 
 export function CardHover() {
     const imageUrl =
