@@ -5,7 +5,7 @@ import LogoHover from '../LogoHover/LogoHover';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [navbarColor, setNavbarColor] = useState('bg-white dark:bg-gray-800');
+  const [navbarColor, setNavbarColor] = useState('bg-transparent');
   const [linkColor, setLinkColor] = useState('text-black');
   const [hover, setHover] = useState('hover:text-rojo');
   const [logo, setLogo] = useState(<Logo />);
@@ -21,7 +21,7 @@ const Navbar = () => {
         setHover('hover:text-white');
         setIsScrolled(true);
       } else {
-        setNavbarColor('lg:bg-transparent bg-white');
+        setNavbarColor('lg:bg-transparent bg-transparent');
         setLinkColor('text-gris-claro');
         setLogo(<Logo />);
         setHover('hover:text-rojo');
@@ -81,7 +81,7 @@ const Navbar = () => {
           </div>
 
           <div
-            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out ${navbarColor}  dark:bg-gray-800 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
+            className={`absolute inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out ${navbarColor} md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center ${
               isOpen ? 'translate-y-0 opacity-100 ' : 'opacity-0 -translate-x-full'
             }`}
           >
@@ -92,7 +92,6 @@ const Navbar = () => {
               >
                 Inicio
               </a>
-             
               <a
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#nosotros"
