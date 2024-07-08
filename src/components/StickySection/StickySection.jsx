@@ -39,15 +39,8 @@ export default function StickySection() {
            
                 <h1 className="mt-2 text-3xl montserrat tracking-tight text-gris-oscuro sm:text-4xl">¿Quienes Somos?</h1>
                 <p className="mt-6 sm:text-xl leading-8 text-gray-700 montserrat">
-                Hace más de 50 años, CrenAgro fue creada para apoyar a dueños 
-                y trabajadores agrícolas. <br />
-                 {/* Basados en nuestra propia experiencia,
-                  comprendemos los desafíos del sector y
-                   ofrecemos herramientas y 
-                   repuestos que resuelven problemas reales.
-                    */}A lo largo de los años, hemos crecido con éxito, 
-                     manteniendo la lealtad de nuestros clientes antiguos
-                      y ganando la confianza de nuevas generaciones.
+                Con mas de 50 años de experiencia, CrenAgro fue creada para apoyar a dueños y trabajadores del campo.
+                A lo largo de los años, hemos crecido con éxito, manteniendo la lealtad de nuestros clientes antiguos y ganando la confianza de las nuevas generaciones.
 
                 </p>
               </div>
@@ -61,13 +54,10 @@ export default function StickySection() {
               <div className="max-w-xl text-base leading-7 text-gray-700 lg:max-w-lg"> 
                 <h2 className="mt-[-2rem] text-3xl sm:text-4xl font-bold tracking-tight text-gris-oscuro montserrat">Porque Elegirnos</h2>
                 <p className="mt-6 sm:text-xl montserrat">
-                Con más de 10 años de experiencia,
-                 nuestro equipo se destaca por su carisma,
-                  respeto y la confianza que establecemos 
-                  con nuestros clientes. El negocio es atendido
-                   por los propios dueños, lo que garantiza un 
-                   vínculo real y cercano con cada cliente. 
-                
+              
+                Nuestro equipo se destaca por su carisma, respeto y la confianza que 
+                establecemos con nuestros clientes, el trato con cada uno de ellos  
+                es por medio de los propios dueños de la empresa lo que garantiza un vínculo real.
                 </p>
 
               </div>

@@ -86,29 +86,30 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col md:flex-row md:mx-6">
-              <a
+              {/* <a
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#inicio"
               >
                 Inicio
-              </a>
+              </a> */}
               <a
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#nosotros"
               >
                 Sobre Nosotros
               </a>
-              <a
-                className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
-                href="#marcas"
-              >
-                Marcas
-              </a>
+           
               <a
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#repuestosyherramientas"
               >
                 Repuestos y Herramientas
+              </a>
+              <a
+                className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
+                href="#marcas"
+              >
+                Marcas
               </a>
             </div>
           </div>

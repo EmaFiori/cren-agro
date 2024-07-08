@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { BrowserRouter,Route ,Routes ,Router } from 'react-router-dom'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import StickySection from './components/StickySection/StickySection'
@@ -24,11 +25,12 @@ function App() {
      <div id='nosotros'>
     <StickySection/>
     </div>
-    <div id='marcas'>
-    <Marcas/>
-    </div>
+    
     <div id='repuestosyherramientas'>
       <RepuestosYHerramientas/>
+    </div>
+    <div id='marcas'>
+    <Marcas/>
     </div>
     <Footer/>
     </div>
