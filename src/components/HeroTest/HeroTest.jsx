@@ -16,7 +16,7 @@ const HeroTest = () => {
           <BgVerde />
         </div>
         <div className="relative px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:items-center lg:mt-[3rem]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-4 lg:items-center lg:mt-[4rem]">
             <div className="text-center lg:text-left md:px-16 lg:px-0 mt-[-1rem] xl:pr-20">
               <h1 className="text-4xl font-bold leading-tight text-gris-oscuro sm:text-5xl lg:text-6xl uppercase montserrat">
                 Mantenemos tu <span className='text-verde'>Campo</span> en <span></span>Movimiento
