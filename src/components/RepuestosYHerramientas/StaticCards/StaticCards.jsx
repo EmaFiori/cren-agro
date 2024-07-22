@@ -1,7 +1,7 @@
 import React from 'react'
-import repuestos from "../../src/assets/crenagro3.mp4";
-import maquinarias from"../../src/assets/crenagro.mp4";
-import herramientas from "../../src/assets/crenagro2.mp4";
+import repuestos from "../../../assets/crenagro3.mp4";
+import maquinarias from"../../../assets/crenagro.mp4";
+import herramientas from "../../../assets/crenagro2.mp4";
 const StaticCards = () => {
   return (
     <div className='text-center mt-[2rem]'>
