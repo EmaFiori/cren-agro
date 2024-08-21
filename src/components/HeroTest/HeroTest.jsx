@@ -26,7 +26,7 @@ const HeroTest = () => {
                 <a href="#repuestosyherramientas" className="inline-flex px-8 py-3 text-lg montserrat text-gris-claro bg-verde border border-transparent rounded-xl transition-all duration-200 hover:bg-rojo hover:border-verde hover:text-white hover:shadow-2xl hover:translate-y-[-.5rem] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                   Explorar
                 </a>
-                <a href="https://wa.link/n0rd56" className="inline-flex px-8 py-3 ml-4 text-lg montserrat text-gris-claro bg-rojo border border-transparent rounded-xl transition-all duration-200 hover:bg-verde hover:text-white hover:shadow-2xl hover:translate-y-[-.5rem] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                <a href="https://wa.link/aarkex" className="inline-flex px-8 py-3 ml-4 text-lg montserrat text-gris-claro bg-rojo border border-transparent rounded-xl transition-all duration-200 hover:bg-verde hover:text-white hover:shadow-2xl hover:translate-y-[-.5rem] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                   Contactar
                 </a>
               </div>
