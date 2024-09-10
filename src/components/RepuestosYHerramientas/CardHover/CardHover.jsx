@@ -14,12 +14,12 @@ export function CardHover() {
   return (
     
     <div className="h-[40rem] relative  flex items-center justify-center">
-      <div className="lg:mx-5">
+      <div className="lg:mx-10">
         
       <DirectionAwareHover imageUrl={imageUrl}>
         <p className="montserrat text-3xl">Repuestos</p>
-        
       </DirectionAwareHover>
+
       </div>
       <div className="lg:mx-5">
       <DirectionAwareHover imageUrl={imageUrl2}>
