@@ -13,25 +13,28 @@ export function CardHover() {
     const imageUrl3 = jorgeImage;
   return (
     
-    <div className="h-[40rem] relative  flex items-center justify-center">
-      <div className="lg:mx-10">
-        
+    <div className="h-[50rem] relative  flex items-center justify-center">
+      <div className="lg:ml-[-5rem] lg:mx-5">
+        <Link to="/repuestos" >
       <DirectionAwareHover imageUrl={imageUrl}>
-        <NavLink to="/repuestos" className="montserrat text-3xl">Repuestos</NavLink>
+        <p className="montserrat text-3xl">Repuestos</p>
       </DirectionAwareHover>
-
+      </Link>
       </div>
       <div className="lg:mx-5">
+        <Link to="/herramientas" >
       <DirectionAwareHover imageUrl={imageUrl2}>
-        <NavLink to="/herramientas" className="montserrat text-3xl text-white">Herramientas</NavLink>
+        <p className="montserrat text-3xl text-white">Herramientas</p>
        
       </DirectionAwareHover>
+      </Link>
       </div>
       <div className="lg:mx-5">
+      <Link to="/maquinarias">
       <DirectionAwareHover imageUrl={imageUrl3}>
-        <NavLink to="/maquinarias" className="montserrat text-3xl">Maquinarias</NavLink>
-    
+        <p className="montserrat text-3xl">Maquinarias</p>
       </DirectionAwareHover>
+      </Link>
       </div>
     </div>
   );
