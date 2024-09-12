@@ -2,7 +2,7 @@
 import { useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../../utils/cn";
-import { Link } from "react-router-dom";
+import { Link,NavLink } from "react-router-dom";
 import { DirectionAwareHover } from "../../../aceternity/ui/direction-aware-hover";
 import jorgeImage from '../../../assets/jorge.png';
 import tractor from '../../../assets/tractor.jpg';
@@ -17,19 +17,19 @@ export function CardHover() {
       <div className="lg:mx-10">
         
       <DirectionAwareHover imageUrl={imageUrl}>
-        <p className="montserrat text-3xl">Repuestos</p>
+        <NavLink to="/repuestos" className="montserrat text-3xl">Repuestos</NavLink>
       </DirectionAwareHover>
 
       </div>
       <div className="lg:mx-5">
       <DirectionAwareHover imageUrl={imageUrl2}>
-        <p className="montserrat text-3xl text-white">Herramientas</p>
+        <NavLink to="/herramientas" className="montserrat text-3xl text-white">Herramientas</NavLink>
        
       </DirectionAwareHover>
       </div>
       <div className="lg:mx-5">
       <DirectionAwareHover imageUrl={imageUrl3}>
-        <p className="montserrat text-3xl">Maquinarias</p>
+        <NavLink to="/maquinarias" className="montserrat text-3xl">Maquinarias</NavLink>
     
       </DirectionAwareHover>
       </div>

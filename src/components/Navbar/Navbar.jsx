@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Logo from '../Logo/Logo';
 import Logo2 from '../Logo2/Logo2';
 import LogoHover from '../LogoHover/LogoHover';
+import { Link} from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -86,12 +87,12 @@ const Navbar = () => {
             }`}
           >
             <div className="flex flex-col md:flex-row md:mx-6">
-              {/* <a
+             <Link
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
-                href="#inicio"
+                to="/"
               >
                 Inicio
-              </a> */}
+              </Link> 
               <a
                 className={`my-2 ${linkColor} text-lg montserrat text-gris-medio transition-colors duration-300 transform dark:text-gray-200 ${hover} dark:hover:text-blue-400 md:mx-4 md:my-0`}
                 href="#nosotros"

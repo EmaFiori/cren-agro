@@ -1,39 +1,33 @@
-import { useState } from 'react'
-import { BrowserRouter,Route ,Routes ,Router } from 'react-router-dom'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import StickySection from './components/StickySection/StickySection'
-import Slider from './components/Slider/Slider'
+
+import { BrowserRouter,Route ,Routes } from 'react-router-dom'
+
 import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
-import Hero from './components/Hero/Hero'
-import {Marcas}  from './components/Marcas/Marcas'
-import HeroTest from './components/HeroTest/HeroTest'
 
-import RepuestosYHerramientas from './components/RepuestosYHerramientas/RepuestosYHerramientas'
+import Home from './components/Home/Home'
+
+import Herramientas from './components/SeccionesRyH/Herramientas'
+import Repuestos from './components/SeccionesRyH/Repuestos'
+import Maquinarias from './components/SeccionesRyH/Maquinarias'
 function App() {
   
 
   return (
+    <BrowserRouter>
     <div className=''>
-    <Navbar/>
-    <div id='inicio'>
-      <HeroTest/>
-    {/* <Hero/> */}
-    </div>
-     {/* <Slider/>  */}
-     <div id='nosotros'>
-    <StickySection/>
-    </div>
-    
-    <div id='repuestosyherramientas'>
-      <RepuestosYHerramientas/>
-    </div>
-    <div id='marcas'>
-    <Marcas/>
-    </div>
+      <Navbar/>
+  
+     <Routes>
+      <Route path='/'element={<Home/>}/>
+      <Route path='/herramientas'element={<Herramientas/>}/>
+      <Route path='/repuestos'element={<Repuestos/>}/>
+      <Route path='/maquinarias'element={<Maquinarias/>}/>
+     </Routes>
+   
+   
     <Footer/>
     </div>
+    </BrowserRouter>
   )
 }
 

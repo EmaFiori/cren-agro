@@ -68,9 +68,10 @@ html {
   .interior-img:hover {
     transform: scale(1.1);
   }
-  
+ 
   @media (min-width: 768px) {
     .parallax-bg {
       background-attachment: fixed;
     }
+  
   }
