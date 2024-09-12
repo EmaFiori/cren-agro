@@ -13,12 +13,18 @@ export function CardHover() {
     const imageUrl3 = jorgeImage;
   return (
     
-    <div className="h-[50rem] relative  flex items-center justify-center">
-      <div className="lg:ml-[-5rem] lg:mx-5">
+    <div className="lg:h-[35rem] lg:ml-[20rem] lg:w-[50vw] lg:shadow-lg lg:rounded-xl relative  flex items-center justify-center">
+      <div className="lg:mx-5">
         <Link to="/repuestos" >
       <DirectionAwareHover imageUrl={imageUrl}>
         <p className="montserrat text-3xl">Repuestos</p>
       </DirectionAwareHover>
+      <div className="lg:mt-5">
+      <span className="montserrat">$1.500.000 ARS</span>
+      </div>
+      <div className="lg:flex-col lg:mt-3 ">
+      <span className="lg:bg-black lg:text-white lg:p-1.5 lg:rounded-xl montserrat "> ver mas</span>
+      </div>
       </Link>
       </div>
       <div className="lg:mx-5">
@@ -27,6 +33,12 @@ export function CardHover() {
         <p className="montserrat text-3xl text-white">Herramientas</p>
        
       </DirectionAwareHover>
+      <div className="lg:mt-5">
+      <span className="montserrat">$1.500.000 ARS</span>
+      </div>
+      <div className="lg:flex-col lg:mt-3 ">
+      <span className="lg:bg-black lg:text-white lg:p-1.5 lg:rounded-xl montserrat "> ver mas</span>
+      </div>
       </Link>
       </div>
       <div className="lg:mx-5">
@@ -35,7 +47,14 @@ export function CardHover() {
         <p className="montserrat text-3xl">Maquinarias</p>
       </DirectionAwareHover>
       </Link>
+      <div className="lg:mt-5">
+      <span className="montserrat">$1.500.000 ARS</span>
+      </div>
+      <div className="lg:flex-col lg:mt-3 ">
+      <span className="lg:bg-black lg:text-white lg:p-1.5 lg:rounded-xl montserrat "> ver mas</span>
+      </div>
       </div>
     </div>
+
   );
 }
