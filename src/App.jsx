@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Footer from './components/Footer/Footer'
 
 import Home from './components/Home/Home'
-
+import Categoria from './components/Categoria/Categoria'
 import Herramientas from './components/SeccionesRyH/Herramientas'
 import Repuestos from './components/SeccionesRyH/Repuestos'
 import Maquinarias from './components/SeccionesRyH/Maquinarias'
@@ -22,6 +22,7 @@ function App() {
       <Route path='/herramientas'element={<Herramientas/>}/>
       <Route path='/repuestos'element={<Repuestos/>}/>
       <Route path='/maquinarias'element={<Maquinarias/>}/>
+      <Route path='/repuestosyherramientas'element={<Categoria/>}/>
      </Routes>
    
    

@@ -1,7 +1,7 @@
 import React from 'react'
 import { CardHover } from './CardHover/CardHover'
 import StaticCards from './StaticCards/StaticCards'
-
+import { Link } from 'react-router-dom'
 const RepuestosYHerramientas = () => {
   return (
     <div>
@@ -14,7 +14,7 @@ const RepuestosYHerramientas = () => {
             
               <p className='lg:text-2xl montserrat text-rojo lg:my-10'>Encontralo acá</p>
             
-              <a className='lg:bg-verde lg:rounded-xl lg:px-10 lg:py-5 lg:text-white montserrat' href="">Ver mas</a>
+              <Link className='lg:bg-verde lg:rounded-xl lg:px-10 lg:py-5 lg:text-white montserrat' to="/repuestosyherramientas">Ver mas</Link>
             </div>
             <CardHover/>
             </div>
