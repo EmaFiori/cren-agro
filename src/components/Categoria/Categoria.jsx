@@ -154,7 +154,7 @@ export default function Categoria() {
 
   return (
     <div className="bg-white">
-         <Marcas/>
+         {/* <Marcas/> */}
       <div>
         {/* Mobile filter dialog */}
         <Dialog open={mobileFiltersOpen} onClose={setMobileFiltersOpen} className="relative z-40 lg:hidden">

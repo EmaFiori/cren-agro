@@ -20,7 +20,7 @@ export function CardHover() {
         <p className="montserrat text-3xl">Repuestos</p>
       </DirectionAwareHover>
       <div className="lg:mt-5">
-      <span className="montserrat">$1.500.000 ARS</span>
+      {/* <span className="montserrat">$1.500.000 ARS</span> */}
       </div>
       <div className="lg:flex-col lg:mt-3 ">
       <span className="lg:bg-black lg:text-white lg:p-1.5 lg:rounded-xl montserrat "> ver mas</span>
@@ -34,7 +34,7 @@ export function CardHover() {
        
       </DirectionAwareHover>
       <div className="lg:mt-5">
-      <span className="montserrat">$1.500.000 ARS</span>
+      {/* <span className="montserrat">$1.500.000 ARS</span> */}
       </div>
       <div className="lg:flex-col lg:mt-3 ">
       <span className="lg:bg-black lg:text-white lg:p-1.5 lg:rounded-xl montserrat "> ver mas</span>
@@ -48,7 +48,7 @@ export function CardHover() {
       </DirectionAwareHover>
       </Link>
       <div className="lg:mt-5">
-      <span className="montserrat">$1.500.000 ARS</span>
+      {/* <span className="montserrat">$1.500.000 ARS</span> */}
       </div>
       <div className="lg:flex-col lg:mt-3 ">
       <span className="lg:bg-black lg:text-white lg:p-1.5 lg:rounded-xl montserrat "> ver mas</span>
