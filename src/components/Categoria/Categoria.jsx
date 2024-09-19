@@ -1,66 +1,8 @@
 import { Marcas } from "../Marcas/Marcas"
+import { useState } from "react"
 
- const products = [
-     {
-             id: 1,
-     name: 'Earthen Bottle',
-   href: '#',       price: '$48',
-       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
-      imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-     },
-     {
-id: 2,
-     name: 'Nomad Tumbler',
-      href: '#',
-       price: '$35',
-       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
-       imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
-    },
-   {
-       id: 3,
-       name: 'Focus Paper Refill',
-       href: '#',
-     price: '$89',
-       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
-       imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-     },
-    {
-       id: 4,
-    name: 'Machined Mechanical Pencil',
-       href: '#',
-    price: '$35',
-       imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-     },
-       {
-        id: 1,
-        name: 'Earthen Bottle',  
-             href: '#',
-         price: '$48',
-         imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
-        imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
-       },
-       {
-       id: 2,
-             name: 'Nomad Tumbler',
-        href: '#',      price: '$35',
-        imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
-       },
-       {
-        id: 3,
-        href: '#',
-         price: '$89',
-         imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
-         imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
-       },
-       {         id: 4,
-         name: 'Machined Mechanical Pencil',
-        href: '#',
-         price: '$35',
-         imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
-        imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
-      },
-   // More products...
-   ]
+
+
   /*
   This example requires some changes to your config:
   
@@ -75,9 +17,67 @@ id: 2,
   }
   ```
 */
-'use client'
-
-import { useState } from 'react'
+const products = [
+  {
+          id: 1,
+  name: 'Earthen Bottle',
+href: '#',       price: '$48',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
+   imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+  },
+  {
+id: 2,
+  name: 'Nomad Tumbler',
+   href: '#',
+    price: '$35',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
+    imageAlt: 'Olive drab green insulated bottle with flared screw lid and flat top.',
+ },
+{
+    id: 3,
+    name: 'Focus Paper Refill',
+    href: '#',
+  price: '$89',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
+    imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+  },
+ {
+    id: 4,
+ name: 'Machined Mechanical Pencil',
+    href: '#',
+ price: '$35',
+    imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',       imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+  },
+    {
+     id: 1,
+     name: 'Earthen Bottle',  
+          href: '#',
+      price: '$48',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-01.jpg',
+     imageAlt: 'Tall slender porcelain bottle with natural clay textured body and cork stopper.',
+    },
+    {
+    id: 2,
+          name: 'Nomad Tumbler',
+     href: '#',      price: '$35',
+     imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-02.jpg',
+    },
+    {
+     id: 3,
+     href: '#',
+      price: '$89',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-03.jpg',
+      imageAlt: 'Person using a pen to cross a task off a productivity paper card.',
+    },
+    {         id: 4,
+      name: 'Machined Mechanical Pencil',
+     href: '#',
+      price: '$35',
+      imageSrc: 'https://tailwindui.com/img/ecommerce-images/category-page-04-image-card-04.jpg',
+     imageAlt: 'Hand holding black machined steel mechanical pencil with brass tip and top.',
+   },
+// More products...
+]
 import {
   Dialog,
   DialogBackdrop,
@@ -92,25 +92,17 @@ import {
 } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
+import data from "../../data/data"
 
 const sortOptions = [
-  { name: 'Most Popular', href: '#', current: true },
-  { name: 'Best Rating', href: '#', current: false },
-  { name: 'Newest', href: '#', current: false },
-  { name: 'Price: Low to High', href: '#', current: false },
-  { name: 'Price: High to Low', href: '#', current: false },
-]
-const subCategories = [
-  { name: 'Totes', href: '#' },
-  { name: 'Backpacks', href: '#' },
-  { name: 'Travel Bags', href: '#' },
-  { name: 'Hip Bags', href: '#' },
-  { name: 'Laptop Sleeves', href: '#' },
-]
+  { name: 'Mas vendido', href: '#', current: true },
+  { name: 'OFERTAS', href: '#', current: false },
+ ]
+
 const filters = [
   {
     id: 'color',
-    name: 'Color',
+    name: 'Respuestos',
     options: [
       { value: 'white', label: 'White', checked: false },
       { value: 'beige', label: 'Beige', checked: false },
@@ -122,7 +114,7 @@ const filters = [
   },
   {
     id: 'category',
-    name: 'Category',
+    name: 'Herramientas',
     options: [
       { value: 'new-arrivals', label: 'New Arrivals', checked: false },
       { value: 'sale', label: 'Sale', checked: false },
@@ -133,15 +125,12 @@ const filters = [
   },
   {
     id: 'size',
-    name: 'Size',
+    name: 'Maquinarias',
     options: [
-      { value: '2l', label: '2L', checked: false },
-      { value: '6l', label: '6L', checked: false },
-      { value: '12l', label: '12L', checked: false },
-      { value: '18l', label: '18L', checked: false },
-      { value: '20l', label: '20L', checked: false },
-      { value: '40l', label: '40L', checked: true },
-    ],
+      { value: 'Vassalli', label: 'Vassalli', checked: false },
+      { value: 'Zanello', label: 'Zanello', checked: false },
+      { value: 'Micelli', label: 'Micelli', checked: false },
+     ],
   },
 ]
 
@@ -149,8 +138,41 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
+
+
 export default function Categoria() {
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false)
+  const [seleccionarMaquinarias,setSeleccionarMaquinarias] = useState({
+    vassalli:false,
+    zanello:false,
+    micelli:false,
+
+});
+const [datosFiltrados,setDatosFiltrados] = useState([]);
+
+const handleOnCheckBox = e =>{
+setSeleccionarMaquinarias({
+...seleccionarMaquinarias ,
+[e.target.value] : e.target.checked
+});
+if(e.target.checked){
+ const resultadoMaquinaria = data.filter(
+   item => item.maquinaria === e.target.value )
+   setDatosFiltrados([
+     ...datosFiltrados,
+     resultadoMaquinaria
+   ])
+
+}else{
+ const resultadoMaquinaria = datosFiltrados.filter(
+   item => item.maquinaria !== e.target.value )
+   setDatosFiltrados([
+     ...resultadoMaquinaria
+   ])
+}
+}
+
 
   return (
     <div className="bg-white">
@@ -179,21 +201,7 @@ export default function Categoria() {
                   <XMarkIcon aria-hidden="true" className="h-6 w-6" />
                 </button>
               </div>
-
-              {/* Filters */}
-              <form className="mt-4 border-t border-gray-200">
-                <h3 className="sr-only">Categories</h3>
-                <ul role="list" className="px-2 py-3 font-medium text-gray-900">
-                  {subCategories.map((category) => (
-                    <li key={category.name}>
-                      <a href={category.href} className="block px-2 py-3">
-                        {category.name}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-
-                {filters.map((section) => (
+              {filters.map((section) => (
                   <Disclosure key={section.id} as="div" className="border-t border-gray-200 px-4 py-6">
                     <h3 className="-mx-2 -my-3 flow-root">
                       <DisclosureButton className="group flex w-full items-center justify-between bg-white px-2 py-3 text-gray-400 hover:text-gray-500">
@@ -228,14 +236,14 @@ export default function Categoria() {
                     </DisclosurePanel>
                   </Disclosure>
                 ))}
-              </form>
+    
             </DialogPanel>
           </div>
         </Dialog>
 
         <main className="mx-auto max-w-8xl px-4 sm:px-6 lg:px-8">
           <div className="flex items-baseline justify-between border-b border-gray-200 pb-6 pt-24">
-            <h1 className="text-4xl font-bold tracking-tight text-gray-900">New Arrivals</h1>
+            <h1 className="text-4xl font-bold tracking-tight text-gray-900">Lo mejor en Marcas</h1>
 
             <div className="flex items-center">
               <Menu as="div" className="relative inline-block text-left">
@@ -295,13 +303,7 @@ export default function Categoria() {
               {/* Filters */}
               <form className="hidden lg:block">
                 <h3 className="sr-only">Categories</h3>
-                <ul role="list" className="space-y-4 border-b border-gray-200 pb-6 text-sm font-medium text-gray-900">
-                  {subCategories.map((category) => (
-                    <li key={category.name}>
-                      <a href={category.href}>{category.name}</a>
-                    </li>
-                  ))}
-                </ul>
+              
 
                 {filters.map((section) => (
                   <Disclosure key={section.id} as="div" className="border-b border-gray-200 py-6">
@@ -319,6 +321,7 @@ export default function Categoria() {
                         {section.options.map((option, optionIdx) => (
                           <div key={option.value} className="flex items-center">
                             <input
+                            onChange={handleOnCheckBox}
                               defaultValue={option.value}
                               defaultChecked={option.checked}
                               id={`filter-${section.id}-${optionIdx}`}
@@ -347,17 +350,17 @@ export default function Categoria() {
           <h2 className="sr-only">Products</h2>
   
           <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
-           {products.map((product) => (
-              <a key={product.id} href={product.href} className="group">
+           {products.map((products) => (
+              <a key={products.id} href={products.href} className="group">
            <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-lg bg-gray-200 xl:aspect-h-8 xl:aspect-w-7">
                   <img
-                   alt={product.imageAlt}
-                    src={product.imageSrc}
+                   alt={products.imageAlt}
+                    src={products.imageSrc}
                 className="h-full w-full object-cover object-center group-hover:opacity-75"
                   />
                 </div>
-                <h3 className="mt-4 text-sm text-gray-700">{product.name}</h3>
-                <p className="mt-1 text-lg font-medium text-gray-900">{product.price}</p>
+                <h3 className="mt-4 text-sm text-gray-700">{products.name}</h3>
+                <p className="mt-1 text-lg font-medium text-gray-900">{products.price}</p>
               </a>
             ))}
           </div>
